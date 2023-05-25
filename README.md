@@ -29,7 +29,7 @@
   <li>[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)</li>
   <li>[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)</li>
   <li>[Bootstrap](https://getbootstrap.com/)</li>
-  <li>[Javascript]https://developer.mozilla.org/pt-BR/docs/Web/JavaScript()</li>
+  <li>[Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)</li>
   <li>[Python](https://www.python.org/)</li>
   <li>[Flask](https://flask.palletsprojects.com/en/2.3.x/)</li>
 </ul>
