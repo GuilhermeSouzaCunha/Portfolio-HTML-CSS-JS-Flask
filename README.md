@@ -2,7 +2,7 @@
 <h1 align="center">Portfólio HTLM/CSS/Bootstrap & Javascript & Python Flask</h1>
 
 <!-- ---------------------------------- Status ---------------------------------- -->
-<h4 align="center">🚧  Projeto Em construção...  🚧</h4>
+<!--<h4 align="center">🚧  Projeto Em construção...  🚧</h4>-->
 
 <!-- ---------------------------------- Sumario ---------------------------------- -->
 <h2 align="center">Sumário</h2>
