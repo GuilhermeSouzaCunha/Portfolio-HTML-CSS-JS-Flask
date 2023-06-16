@@ -6,6 +6,18 @@ html, body {
     height: 100%;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* ---------- header ---------- */
 #header {
     position: fixed;
     top: 0;
@@ -13,9 +25,6 @@ html, body {
     width: 100%;
     padding: 0 20px;
     transition: all ease-in-out 0.5s;
-}
-
-.header-flex {
     display: flex;
     align-items: center;
 }
@@ -88,6 +97,7 @@ html, body {
     color: #149ddd;
 }
 
+/* ---------- Tela inicial ---------- */
 #main {
     margin-top: 80px;
 }
@@ -117,15 +127,196 @@ section#inicio span#subtitle {
     color: #fff;
 }
 
-section#inicio div#arraste {
-    width: 9rem;
+/*  */
+.article {
+    margin-top: 80px;
+    flex: 1;
 }
 
-section#inicio div#arraste a {
+/* ---------- Sobre ---------- */
+#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#sobre h2 {
+    margin-top: 50px;
+    text-align: center;
+    flex-basis: 100%;
+    color: black;
+}
+
+#sobre div {
+    flex: 1;
+    color: black;
+}
+
+#sobre .conhecer {
+    margin: 20px 25px 20px 100px;
+}
+
+#sobre .habilidades {
+    margin: 20px 100px 20px 25px;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#sobre h3 {
+    margin-bottom: 25px;
+}
+
+#sobre ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sobre ul li {
+    margin: 0px 10px  10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e1e1e1;
+}
+
+/* ---------- Projetos ---------- */
+#projeto01, #projeto02 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#projeto01 h2, #projeto02 h2 {
+    margin-top: 50px;
+    text-align: center;
+    flex-basis: 100%;
+    color: black;
+}
+
+#projeto01 div, #projeto02 div {
+    flex: 1;
+    color: black;
+}
+
+#projeto01 .descProj, #projeto02 .descProj {
+    margin: 20px 25px 20px 100px;
+}
+
+#projeto01 .utilProj, #projeto02 .utilProj {
+    margin: 20px 100px 20px 25px;
+}
+
+#projeto01 p, #projeto02 p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#projeto01 h3, #projeto02 h3 {
+    margin-bottom: 25px;
+}
+
+#projeto01 ul, #projeto02 ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projeto01 ul li, #projeto02 ul li {
+    margin: 0px 10px  10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e1e1e1;
+}
+
+#projeto01 a, #projeto02 a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
     text-decoration: none;
+    background-color: black;
+}
+
+/* ---------- Contato ---------- */
+#contato {
+    margin-top: 100px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato h2 {
+    text-align: center;
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contato input[type=text], #contato input[type=email], #contato textarea{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #efeeee;
+}
+
+#contato button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* ---------- Footer ---------- */
+#footer {
+    flex-shrink: 0;
+    background-color: #021124;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+
+#footer .profile {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#footer .profile h1 {
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 2rem;
+    padding: 0;
+    font-weight: 600;
     color: #fff;
 }
 
+#footer .profile .social-links a {
+    font-size: 1rem;
+    background: #212431;
+    color: #fff;
+    padding: 0.6rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: 0.3;
+    text-decoration: none;
+}
+
+#footer .profile .social-links a:hover {
+    background-color: #149ddd;
+}
+
+/* ---------- Respansividade ---------- */
 i.menu-mobile {
     position: fixed;
     color: #fff;
@@ -191,4 +382,57 @@ i.menu-mobile {
         margin-top: 0;
     }
 
+    /* ---------- Sobre ---------- */
+    #sobre {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre .conhecer {
+        margin: 20px 50px 20px 50px;
+    }
+    
+    #sobre .habilidades {
+        margin: 20px 50px 50px 50px;
+    }
+
+    #sobre h2 {
+        margin-top: 15px;
+    }
+
+    /* ---------- Projeto ---------- */
+    #projeto01, #projeto02 {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projeto01 .descProj, #projeto02 .descProj {
+        margin: 20px 50px 20px 50px;
+    }
+    
+    #projeto01 .utilProj, #projeto02 .utilProj {
+        margin: 20px 50px 50px 50px;
+    }
+
+    #projeto01 h2, #projeto02 h2 {
+        margin-top: 15px;
+    }
+
+    /* ---------- Footer ---------- */
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer .profile{
+        display: inline;
+        padding: 5px;
+    }
+
+    #footer .profile h1 {
+        margin-right: 0rem;
+    }
 }
